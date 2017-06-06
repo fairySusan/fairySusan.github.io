@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>听指令的小方块</title>
+	<script type="text/javascript" src="project04js.js"></script>
+	<style type="text/css">
+		*{margin:0;padding: 0;}
+		table{
+			background-color: yellow;
+		}
+		#wrap{
+			width: 520px;
+			position: relative;
+		}
+		td{
+			width: 48px;
+			height: 48px;
+			border: 1px #ccc solid;
+		}
+		th{
+			border: none;
+		}
+		#box{
+			background-color: red;
+			border-top:10px blue solid;
+			height: 40px;
+			width: 50px;
+			position: absolute;
+			z-index: 999;
+			top: 220px;
+			left:220px;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+	<div id="box"></div>
+	<table cellspacing="0">
+		<th></th>
+		<th>1</th>
+		<th>2</th>
+		<th>3</th>
+		<th>4</th>
+		<th>5</th>
+		<th>6</th>
+		<th>7</th>
+		<th>8</th>
+		<th>9</th>
+		<th>10</th>
+		<tr> 
+			<th>1</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<th>2</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>		
+		<tr>
+			<th>3</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>		
+		<tr>
+			<th>4</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>		
+		<tr>
+			<th>5</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>		
+		<tr>
+			<th>6</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>		
+		<tr>
+			<th>7</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>		
+		<tr>
+			<th>8</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>		
+		<tr>
+			<th>9</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>		
+		<tr>
+			<th>10</th>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>					
+	</table>
+</div>
+	<p><input type="text" name="command" id="command" autofocus="autofocus">
+	<button id="act" onclick="Move()">执行</button>
+	</p>
+	<p>
+	可以输入四种指令：GO,TUN LEF,TUN RIG,TUN BAC<br>
+	移动但方向不变：TRA LEF,TRA RIG,TRA TOP,TRA BOT<br>
+	方向转变并且移动：MOV LEF,MOV RIG,MOV TOP,MOV BOT
+	</p>
+</body>
+</html>
