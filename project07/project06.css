@@ -1,0 +1,95 @@
+/* CSS Document */
+*{margin:0;padding:0;}
+body{font-family:Verdana, Geneva, sans-serif;font-size:16px;}
+.outside-box{
+	margin:10px 125px;
+	width:710px;
+	-webkit-animation:animationCenter 0.5s;
+	animation:animationCenter 0.5s;
+}
+.month{
+	width:710px;
+	height:190px;
+	background:#1abc9c;
+	position:relative;
+}
+ul{
+	list-style:none;
+}
+#prev,#next{
+	position:absolute;
+	top:40%;
+	color:white;
+	padding:14px;
+	font-weight:bold;
+	font-size:18px;
+	border-radius:2px;
+	transition:0.5s ease;
+}
+#next{
+	right:0px;
+}
+#prev:hover,
+#next:hover,
+#prev-year:hover,
+#next-year:hover{
+	background:rgba(0,0,0,0.5);
+	cursor: pointer;
+}
+.month #month-title{
+	font-size:32px;
+	color:white;
+	text-align:center;
+	padding-top:50px;
+}
+.month #month-title div{
+	font-size:28px;
+}
+#prev-year,#next-year{
+	font-size: 18px;
+	font-weight: bold;
+}
+.weekday{
+	width:710px;
+	height:60px;
+	background:#ddd;
+}
+.weekday li{
+	display:inline-block;
+	text-align:center;
+	padding-top:20px ;
+	color:#605E5E;
+	width:13%;
+}
+#day{
+	width:710px;
+	background:#eeeeee;
+	transition:0.5s ease;
+}
+#day li{
+	display:inline-block;
+	color:#605E5E;
+	padding:15px 0;
+	text-align:center;
+	width:13%;
+	border-radius:3px;
+}
+#day li:hover{
+	background:rgba(0,0,0,0.5);
+	color:white;
+	font-weight:bold;
+}
+.today{
+	background:rgba(0,0,0,0.2);
+}
+input{
+	margin-top: 10px;
+}
+@-webkit-keyframes animationCenter{
+		from{-webkit-transform:scale(0);}
+		to{-webkit-transform:scale(1);}
+		}
+		@keyframes animationCenter{
+			from{transform:scale(0);}
+			to{transform:scale(1);}
+			}
