@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javascript练习五</title>
+	<script type="text/javascript" src="js/project03js-2.js"></script>
+	<style type="text/css">
+		.num-box{
+			width: 70px;
+			height: 30px;
+			background-color:red;
+			color: white;
+			text-align: center;
+			line-height: 30px;
+			display: inline-block;
+			margin-right: 15px;
+			cursor: pointer;
+		}
+		#left-in,
+		#left-out{
+			background-color:#F59C9C;
+		}
+		#right-in,
+		#right-out{
+			background-color: #61F6E8;
+		}
+	</style>
+</head>
+<body>
+	<p>
+	<input id="queue" type="number" name="queue" autofocus="autofocus"> 
+	<button id="left-in" onclick="leftIn()">右侧入</button>
+	<button id="left-out" onclick="leftOut()">左侧出</button>
+	<button id="right-in" onclick="rightIn()">左侧入</button>
+	<button id="right-out" onclick="rightOut()">右侧出</button>
+	</p>
+	<div id="big-box"></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javascript练习六</title>
+	<script type="text/javascript" src="js/project03js-3.js"></script>
+	<style type="text/css">
+		#big-box{
+			
+		}
+		/* #fixer{			        *这个盒子事用来把big—box撑起来的盒子，
+					             *不加这个的话，numBox会根据每	
+					             *一个numBox高度不同了跳动*
+			height: 100px;
+			display: inline-block;
+		} */
+		.num-box{
+			width:15px;
+			background-color:red;
+			color: white;
+			text-align: center;
+			line-height: 30px;
+			display: inline-block;
+			margin-right: 5px;
+			cursor: pointer;
+		}
+
+		#left-in,
+		#left-out{
+			background-color:#F59C9C;
+		}
+		#right-in,
+		#right-out{
+			background-color: #61F6E8;
+		}
+	</style>
+</head>
+<body>
+	<p>请输入10~100之间的整数值;只能输入10次</p>
+	<p>
+	<input id="queue" type="number" name="queue" autofocus="autofocus" max="100" min="10"> 
+	<button id="left-in" onclick="rightIn()">右侧入</button>
+	<button id="left-out" onclick="leftOut()">左侧出</button>
+	<button id="right-in" onclick="leftIn()">左侧入</button>
+	<button id="right-out" onclick="rightOut()">右侧出</button>
+	<button id="rank" onclick="rank()">排序(从小到大)</button>
+	</p>
+	<div id="big-box">
+	</div>
+	<p>如果div里没有内容，并排在一起就是底部对齐，如果有内容就是顶部对齐</p>
+	<p>全局变量会存储上一次的值</p>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
