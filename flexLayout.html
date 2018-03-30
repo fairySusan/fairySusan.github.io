@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex布局</title>
+	<meta charset="utf-8">
+</head>
+<style type="text/css">
+	*{
+		padding: 20px;
+		margin: 0;
+	}
+	.p-box{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border:1px solid gray;
+		align-items: center;
+		box-sizing: border-box;
+		
+	}
+	.box{
+		width:150px;
+		border:1px solid red;
+	}
+	.box1{
+		height:120px;
+	}
+	.box2{
+		height:100px;
+	}
+	.box3{
+		height:40px;
+	}
+	.box4{
+		height:200px;
+	}
+	@media all  and (max-width:768px) {
+		.p-box{
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+		.box4{
+			order:-1;
+		}
+
+	}
+</style>
+<body>
+	<div class="p-box">
+		<div class="box box1">1</div>
+		<div class="box box2">2</div>
+		<div class="box box3">3</div>
+		<div class="box box4">4</div>
+	</div>
+</body>
+</html>
