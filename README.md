@@ -2,7 +2,7 @@
 my work site
 报纸练习项目地址：https://fairySusan.github.io/project01
 
-flex布局练习：https://fairySusan.github.io/project02
+flex布局练习：https://fairySusan.github.io/flexLayout
 
 柱状图生成器项目地址：https://fairySusan.github.io/project03
 
