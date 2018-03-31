@@ -1,0 +1,153 @@
+/*样式重置*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background: transparent;
+}
+ul {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+.clear{
+	display: block;
+	overflow: hidden;
+}
+.clearfix{
+	zoom:1;
+}
+.clearfix::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+.clearfix::before{
+	content:'';
+	display: block;
+	clear: both;
+}
+ul li{
+	list-style: none;
+}
+header{
+	font-size: 24px;
+	background:pink;
+	height:120px;
+	line-height: 120px;
+	color:white;
+	position: relative;
+}
+header .return-icon{
+	font-size: 42px;
+	position: absolute;
+	left: 10px;
+}
+header h1{
+	text-align: center;
+}
+/*导航*/
+nav{
+}
+nav .nav-ul{
+	width:100%;
+	height:130px;
+}
+nav .nav-ul li{
+	display: inline-block;
+	font-size: 40px;
+	width:20%;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 120px;
+	font-weight: bold;
+}
+li#active{
+	color:pink;
+	border-bottom:10px solid pink;
+}
+/*幻灯片*/
+.slider-wrap{
+}
+/*标签*/
+.tags ul li{
+	display: inline-block;
+	width: 20%;
+	font-size: 38px;
+	text-align: center;
+}
+/*分栏式布局*/
+.colume,.slider-wrap,nav{
+	background: white;
+}
+.colume ul{
+	text-align: center;
+	margin-top: 20px;
+	border-top:5px solid #666;
+	padding-top:15px; 
+	width:90%;
+	margin: 0 auto;
+}
+.colume ul li{
+	display: inline-block;
+	font-size: 38px;
+	width: 33.3%;
+	text-align: center;
+}
+/*模块一，三列式布局，使用中间自适应，float方式*/
+.module1{
+	width: 90%;
+	margin: 20px auto 0;
+}
+.module1 h1{
+	font-size: 42px;
+	padding: 10px;
+	border-bottom:5px solid #666;
+}
+.module1 .list-box{
+	padding: 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.col-left{}
+
+.col2,.col1{
+	font-size: 36px;
+	width: 35%;
+}
+.col1{
+}
+.col2{
+}
+.col1 li,.col2 li{
+	text-align: center;
+	background-color: gray;
+	height: 100px;
+	line-height: 100px;
+}
+/*两列布局*/
+.row-wrap{
+	width:90%;
+	margin: 20px auto; 
+}
+.col-img{
+	float: left;
+	width: 280px;
+}
+.dsc-text{
+	float: right;
+}
+.row-wrap li h1{
+	font-size: 48px;
+}
+.row-wrap li h6{
+	font-size: 38px;
+	position: relative;
+	top:45px;
+	color:gray;
+}
+.row-wrap ul{
+	padding: 20px 0;
+	border-bottom:5px solid gray;
+}
